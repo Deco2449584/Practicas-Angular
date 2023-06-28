@@ -1,4 +1,14 @@
 <div>
+  <h1>class & style</h1>
+  <input type="text" required #nameInput2="ngModel" [(ngModel)]="person.name" />
+  <p class="message-error" [class.invalid]="nameInput2.invalid">
+    el campo es requerido
+  </p>
+  <input type="text" required #nameInput3="ngModel" [(ngModel)]="person.name" />
+  <p [style.font-style]="nameInput3.invalid ? 'italic' : 'normal'">TEXTO</p>
+  <hr />
+</div>
+<div>
   <h1>ngswich</h1>
   <input type="text" required [(ngModel)]="person.name" />
   <div [ngSwitch]="person.name">
