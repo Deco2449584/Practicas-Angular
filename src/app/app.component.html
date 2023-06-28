@@ -1,9 +1,14 @@
 <div>
   <h1>*Ngif</h1>
   <input type="text" required [(ngModel)]="person.name" />
-  <p *ngIf="person.name === 'gay'">Soy Gay</p>
+  <input type="number" required [(ngModel)]="person.age" />
+  <p *ngIf="person.name === 'gay'">Gay</p>
+  <p *ngIf="person.name === 'hola' && person.age === 18; else myblock">Gay</p>
+  <ng-template #myblock>
+    <p>bloque de else</p>
+  </ng-template>
 </div>
-
+<hr />
 <div>
   <h1>Ng model</h1>
   <p>Nombre {{ name }}</p>
