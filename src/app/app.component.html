@@ -1,4 +1,18 @@
 <div>
+  <h1>ngswich</h1>
+  <input type="text" required [(ngModel)]="person.name" />
+  <div [ngSwitch]="person.name">
+    <p *ngSwitchCase="'nicolas'">NICOLAS</p>
+    <p *ngSwitchCase="'daniel'">DANIEL</p>
+    <p *ngSwitchCase="'duglas'">DUGLAS</p>
+    <p *ngSwitchCase="'ana'">ANA</p>
+    <p *ngSwitchCase="'bulma'">BULMA</p>
+    <p *ngSwitchDefault>default</p>
+  </div>
+</div>
+<hr />
+
+<div>
   <h1>*ngfor</h1>
   <div>
     <div *ngFor="let product of products">
