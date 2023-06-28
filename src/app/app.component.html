@@ -1,4 +1,19 @@
 <div>
+  <input type="text" required [(ngModel)]="newName" />
+
+  <h1>*ngfor</h1>
+  <button (click)="addName()">Add Name</button>
+  <ul>
+    <li *ngIf="names.length === 0">No hay Nombres</li>
+    <li *ngFor="let name of names; index as i">
+      {{ i }}{{ name }}
+      <button (click)="deleteName(i)">Delete</button>
+    </li>
+  </ul>
+</div>
+<hr />
+const
+<div>
   <h1>*Ngif</h1>
   <input type="text" required [(ngModel)]="person.name" />
   <input type="number" required [(ngModel)]="person.age" />
