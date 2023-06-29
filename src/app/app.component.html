@@ -1,3 +1,8 @@
+<app-product [product]="product" *ngFor="let product of products"></app-product>
+
+<app-imagen [x]="xxx"></app-imagen>
+<input type="text" [(ngModel)]="xxx" placeholder="escriba aqui" />
+
 <div class="containerLogin">
   <h1>Formulario</h1>
   <form (ngSubmit)="(onRegister)" #myform="ngForm">

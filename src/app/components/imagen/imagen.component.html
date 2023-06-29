@@ -1,0 +1,5 @@
+<p>imagen works!</p>
+<h1 [style.color]="'red'" *ngIf="x; else otro">{{ x }}</h1>
+<ng-template #otro>
+  <h1 [style.color]="'green'">en verde</h1>
+</ng-template>
