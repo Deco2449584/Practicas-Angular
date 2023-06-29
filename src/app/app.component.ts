@@ -11,6 +11,11 @@ export class AppComponent {
   age = 25;
   img = 'https://www.w3schools.com/howto/img_avatar.png';
   btn = true;
+  box = {
+    width: 100,
+    height: 100,
+    background: 'red',
+  };
   person = {
     name: 'DanielOPbjeto',
     age: 25,
