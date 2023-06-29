@@ -1,3 +1,44 @@
+<div class="containerLogin">
+  <h1>Formulario</h1>
+  <form (ngSubmit)="(onRegister)" #myform="ngForm">
+    <div class="card">
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Nombre"
+        [(ngModel)]="register.name"
+        required
+      />
+      <p>intruzca su nombre</p>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Email"
+        [(ngModel)]="register.email"
+        required
+      />
+      <p>intruzca su email</p>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="Password"
+        [(ngModel)]="register.password"
+        required
+      />
+      <p>intruzca su password</p>
+    </div>
+    <div class="botones">
+      <button class="button" [disabled]="myform.invalid" type="submit">
+        Enviar
+      </button>
+      <button class="button" type="button">Action</button>
+    </div>
+  </form>
+</div>
+
 <div>
   <h1>ng class & ng style</h1>
   <input type="text" required #nameInput4="ngModel" [(ngModel)]="person.name" />

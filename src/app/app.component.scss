@@ -1,18 +1,66 @@
-.message-error {
-  color: red;
-  opacity: 0;
-  transition: all linear 0.5s;
-  &.invalid {
-    opacity: 1;
-  }
+.containerLogin {
+  background-image: url(../assets/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; /* o background-size: contain; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
-.line-error {
-  height: 0;
-  border-bottom: 1px solid;
-  &.invalid {
-    border-color: red;
-  }
-  &.valid {
-    border-color: green;
-  }
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  margin: 100px 10px 10px 10px;
+  box-shadow: -27px 20px 12px 8px rgba(0, 0, 0, 0.1),
+    0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+.botones {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+.button {
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-radius: 20px;
+}
+form {
+  background-color: transparent;
+  width: 500px;
+  height: 500px;
+  border-radius: 50px;
+}
+input {
+  background-color: transparent;
+  font-size: 20px;
+  border: 1px solid #a00c99;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  outline: none;
+}
+label {
+  font-size: 20px;
+  color: #a00c99;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  float: left;
+  margin-right: 150px;
+}
+p {
+  font-size: 15px;
+  color: #a00c99;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  float: left;
+  margin-right: 100px;
 }
